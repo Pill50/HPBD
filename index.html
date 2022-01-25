@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mưng Mưng</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">Mưng Mưng Page</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">Giới thiệu</a>
+        <a href="#about">Lý do</a>
+        <a href="#contact">Có gì hỏi tui hông?</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Page này làm ra nhằm mục đích gì?</h3>
+        <p>Như các bạn chưa hề biết gì thì hôm nay chính là ngày Mưng Mưng ra đời. Ngày này 20 năm về trước vì lý do ở trong bụng mẹ lâu ngày quá nên chán vì thế nó đã chui ra thế giới bên ngoài để rồi giờ đây nó đu bám tui quài mà không buông. Vì sao nó lại đu tui ư? Đón xem nào!</p>
+        <a href="#" class="btn">Giải mã</a>
+    </div>
+
+    <div class="swiper-container image-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/10.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h1 class="heading">nói tóm lại là hapy birthday em heo</h1>
+    <div class="row">
+        <div class="image">
+            <img src="./images/20.jpg" alt="">
+        </div>
+        
+        <div class="content">
+            <h3>Anh muốn nói với em là</h3>
+            <p>Năm cũ đã qua, năm mới tết đến, chúc em và gia đình có nhiều sức khỏe, làm ăn phát tài, phát đạt, an khang, thịnh vượng. Vì sinh nhật em ngay tết nên là anh chúc tết trước cho nó hợp lý.</p>
+            <p>Tiếp theo tới lượt em. Vì một tương lai tươi sáng nên anh chúc em làm ăn khấm khá, bán được nhiều đồ để có tiền mua xe cho anh sài (hihi). Sau đó thì chúc em mau ăn chóng lớn, body phát triển chứ không phải như con nít lên 3 nữa, học hành ngày càng đi lên và mau có công việc sớm. Tiếp tục là bớt lì lợm và hứa nhớ giữ lời không để anh phải chửi nữa. Và cuối cùng là chúc em heo luôn mãi hạnh phúc bên anh heo và cùng anh viết tiếp chặng đường phía trước nha. CHÚC NHIÊU ĐÂY DÀI LẮM RÙI NÊN LÀ HÔNG CHÚC NỮA ĐÂU (HÊ HÊ).</p>
+
+            <input type="submit" class="btn" value="Anh yêu em">
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">Có gì muốn nói dí anh hông</h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <input type="text" required>
+            <label>Name</label>
+        </div>
+        <div class="inputBox">
+            <input type="email" required>
+            <label>Email</label>
+        </div>
+        <div class="inputBox">
+            <input type="number" required>
+            <label>number</label>
+        </div>
+        <div class="inputBox">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label>message</label>
+        </div>
+
+        <input type="submit" class="btn" value="send message">
+
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+    <h1 class="credit"> created by <span> Phúc Pill - 2022</span> | all rights reserved! </h1>
+
+</section>
+<!-- footer section ends -->
+
+
+
+
+
+
+<!-- script part  -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+    },
+});    
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+
+
+</body>
+</html>
